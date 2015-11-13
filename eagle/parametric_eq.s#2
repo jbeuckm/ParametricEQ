@@ -6392,19 +6392,19 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <parts>
 <part name="IC1" library="linear" deviceset="TL072" device="P"/>
 <part name="IC2" library="linear" deviceset="TL072" device="P"/>
-<part name="C1" library="rcl" deviceset="C-US" device="025-030X050" value="330p"/>
-<part name="C2" library="rcl" deviceset="C-US" device="025-030X050" value="330p"/>
-<part name="C3" library="rcl" deviceset="C-US" device="025-030X050" value="330p"/>
+<part name="C1" library="rcl" deviceset="C-US" device="050-050X075" value="330p"/>
+<part name="C2" library="rcl" deviceset="C-US" device="050-050X075" value="330p"/>
+<part name="C3" library="rcl" deviceset="C-US" device="050-050X075" value="330p"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="2k2"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="0207/10" value="2k2"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="0207/10" value="2k2"/>
 <part name="R10" library="rcl" deviceset="R-US_" device="0207/10" value="1k"/>
-<part name="C4" library="rcl" deviceset="C-US" device="025-030X050" value="39n"/>
-<part name="C5" library="rcl" deviceset="C-US" device="025-030X050" value="100n"/>
-<part name="C6" library="rcl" deviceset="C-US" device="025-030X050" value="5n6"/>
-<part name="C7" library="rcl" deviceset="C-US" device="025-030X050" value="15n"/>
-<part name="C8" library="rcl" deviceset="C-US" device="025-030X050" value="1n8"/>
-<part name="C9" library="rcl" deviceset="C-US" device="025-030X050" value="4n7"/>
+<part name="C4" library="rcl" deviceset="C-US" device="050-050X075" value="39n"/>
+<part name="C5" library="rcl" deviceset="C-US" device="050-050X075" value="100n"/>
+<part name="C6" library="rcl" deviceset="C-US" device="050-050X075" value="5n6"/>
+<part name="C7" library="rcl" deviceset="C-US" device="050-050X075" value="15n"/>
+<part name="C8" library="rcl" deviceset="C-US" device="050-050X075" value="1n8"/>
+<part name="C9" library="rcl" deviceset="C-US" device="050-050X075" value="4n7"/>
 <part name="R12" library="rcl" deviceset="R-US_" device="0207/10" value="4k7"/>
 <part name="R13" library="rcl" deviceset="R-US_" device="0207/10" value="5k1"/>
 <part name="R14" library="rcl" deviceset="R-US_" device="0207/10" value="2k7"/>
@@ -6436,9 +6436,9 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="INPUT" library="erthenvar" deviceset="AUDIO-JACK" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="LOW" library="bourns_ptd" deviceset="PTD902" device="" technology="PTD902" value="50k log"/>
-<part name="MID" library="bourns_ptd" deviceset="PTD902" device="" technology="PTD902" value="50k log"/>
-<part name="HI" library="bourns_ptd" deviceset="PTD902" device="" technology="PTD902" value="50k log"/>
+<part name="LOWFREQ" library="bourns_ptd" deviceset="PTD902" device="" technology="PTD902" value="50k log"/>
+<part name="MIDFREQ" library="bourns_ptd" deviceset="PTD902" device="" technology="PTD902" value="50k log"/>
+<part name="HIFREQ" library="bourns_ptd" deviceset="PTD902" device="" technology="PTD902" value="50k log"/>
 <part name="LOLEV" library="bourns_ptd" deviceset="PTD901" device="" value="5k lin"/>
 <part name="MIDLEV" library="bourns_ptd" deviceset="PTD901" device="" value="5k lin"/>
 <part name="HILEV" library="bourns_ptd" deviceset="PTD901" device="" value="5k lin"/>
@@ -6499,12 +6499,12 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <instance part="GND12" gate="1" x="175.26" y="33.02"/>
 <instance part="INPUT" gate="G$1" x="-5.08" y="71.12" rot="MR180"/>
 <instance part="GND7" gate="1" x="2.54" y="63.5"/>
-<instance part="LOW" gate="/1" x="58.42" y="30.48" rot="MR180"/>
-<instance part="LOW" gate="/2" x="71.12" y="30.48" rot="MR180"/>
-<instance part="MID" gate="/1" x="101.6" y="30.48" rot="MR180"/>
-<instance part="MID" gate="/2" x="116.84" y="30.48" rot="MR180"/>
-<instance part="HI" gate="/1" x="147.32" y="30.48" rot="MR180"/>
-<instance part="HI" gate="/2" x="160.02" y="30.48" rot="MR180"/>
+<instance part="LOWFREQ" gate="/1" x="58.42" y="30.48" rot="MR180"/>
+<instance part="LOWFREQ" gate="/2" x="71.12" y="30.48" rot="MR180"/>
+<instance part="MIDFREQ" gate="/1" x="101.6" y="30.48" rot="MR180"/>
+<instance part="MIDFREQ" gate="/2" x="116.84" y="30.48" rot="MR180"/>
+<instance part="HIFREQ" gate="/1" x="147.32" y="30.48" rot="MR180"/>
+<instance part="HIFREQ" gate="/2" x="160.02" y="30.48" rot="MR180"/>
 <instance part="LOLEV" gate="G$1" x="71.12" y="-5.08" rot="MR90"/>
 <instance part="MIDLEV" gate="G$1" x="116.84" y="-5.08" rot="MR90"/>
 <instance part="HILEV" gate="G$1" x="160.02" y="-5.08" rot="MR90"/>
@@ -6655,7 +6655,7 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <segment>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="22.86" x2="58.42" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="LOW" gate="/1" pin="E"/>
+<pinref part="LOWFREQ" gate="/1" pin="E"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -6669,7 +6669,7 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="71.12" y1="22.86" x2="71.12" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="LOW" gate="/2" pin="E"/>
+<pinref part="LOWFREQ" gate="/2" pin="E"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -6697,28 +6697,28 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <segment>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="22.86" x2="116.84" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="MID" gate="/2" pin="E"/>
+<pinref part="MIDFREQ" gate="/2" pin="E"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="101.6" y1="22.86" x2="101.6" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="MID" gate="/1" pin="E"/>
+<pinref part="MIDFREQ" gate="/1" pin="E"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="R19" gate="G$1" pin="2"/>
 <wire x1="147.32" y1="22.86" x2="147.32" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="HI" gate="/1" pin="E"/>
+<pinref part="HIFREQ" gate="/1" pin="E"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="R20" gate="G$1" pin="2"/>
 <wire x1="160.02" y1="22.86" x2="160.02" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="HI" gate="/2" pin="E"/>
+<pinref part="HIFREQ" gate="/2" pin="E"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -6878,10 +6878,10 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <wire x1="76.2" y1="30.48" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="38.1" x2="71.12" y2="38.1" width="0.1524" layer="91"/>
 <junction x="71.12" y="38.1"/>
-<pinref part="LOW" gate="/2" pin="A"/>
-<pinref part="LOW" gate="/2" pin="S"/>
-<pinref part="LOW" gate="/1" pin="A"/>
-<pinref part="LOW" gate="/1" pin="S"/>
+<pinref part="LOWFREQ" gate="/2" pin="A"/>
+<pinref part="LOWFREQ" gate="/2" pin="S"/>
+<pinref part="LOWFREQ" gate="/1" pin="A"/>
+<pinref part="LOWFREQ" gate="/1" pin="S"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -6905,10 +6905,10 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <wire x1="121.92" y1="30.48" x2="121.92" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="38.1" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
 <junction x="116.84" y="38.1"/>
-<pinref part="MID" gate="/1" pin="A"/>
-<pinref part="MID" gate="/1" pin="S"/>
-<pinref part="MID" gate="/2" pin="A"/>
-<pinref part="MID" gate="/2" pin="S"/>
+<pinref part="MIDFREQ" gate="/1" pin="A"/>
+<pinref part="MIDFREQ" gate="/1" pin="S"/>
+<pinref part="MIDFREQ" gate="/2" pin="A"/>
+<pinref part="MIDFREQ" gate="/2" pin="S"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -6932,10 +6932,10 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <wire x1="165.1" y1="30.48" x2="165.1" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="38.1" x2="160.02" y2="38.1" width="0.1524" layer="91"/>
 <junction x="160.02" y="38.1"/>
-<pinref part="HI" gate="/1" pin="A"/>
-<pinref part="HI" gate="/1" pin="S"/>
-<pinref part="HI" gate="/2" pin="A"/>
-<pinref part="HI" gate="/2" pin="S"/>
+<pinref part="HIFREQ" gate="/1" pin="A"/>
+<pinref part="HIFREQ" gate="/1" pin="S"/>
+<pinref part="HIFREQ" gate="/2" pin="A"/>
+<pinref part="HIFREQ" gate="/2" pin="S"/>
 </segment>
 </net>
 <net name="N$23" class="0">
