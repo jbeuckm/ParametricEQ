@@ -6392,19 +6392,19 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <parts>
 <part name="IC1" library="linear" deviceset="TL072" device="P"/>
 <part name="IC2" library="linear" deviceset="TL072" device="P"/>
-<part name="C1" library="rcl" deviceset="C-US" device="025-030X050" value="330p"/>
-<part name="C2" library="rcl" deviceset="C-US" device="025-030X050" value="330p"/>
-<part name="C3" library="rcl" deviceset="C-US" device="025-030X050" value="330p"/>
+<part name="C1" library="rcl" deviceset="C-US" device="050-050X075" value="330p"/>
+<part name="C2" library="rcl" deviceset="C-US" device="050-050X075" value="330p"/>
+<part name="C3" library="rcl" deviceset="C-US" device="050-050X075" value="330p"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="2k2"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="0207/10" value="2k2"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="0207/10" value="2k2"/>
 <part name="R10" library="rcl" deviceset="R-US_" device="0207/10" value="1k"/>
-<part name="C4" library="rcl" deviceset="C-US" device="025-030X050" value="39n"/>
-<part name="C5" library="rcl" deviceset="C-US" device="025-030X050" value="100n"/>
-<part name="C6" library="rcl" deviceset="C-US" device="025-030X050" value="5n6"/>
-<part name="C7" library="rcl" deviceset="C-US" device="025-030X050" value="15n"/>
-<part name="C8" library="rcl" deviceset="C-US" device="025-030X050" value="1n8"/>
-<part name="C9" library="rcl" deviceset="C-US" device="025-030X050" value="4n7"/>
+<part name="C4" library="rcl" deviceset="C-US" device="050-050X075" value="39n"/>
+<part name="C5" library="rcl" deviceset="C-US" device="050-050X075" value="100n"/>
+<part name="C6" library="rcl" deviceset="C-US" device="050-050X075" value="5n6"/>
+<part name="C7" library="rcl" deviceset="C-US" device="050-050X075" value="15n"/>
+<part name="C8" library="rcl" deviceset="C-US" device="050-050X075" value="1n8"/>
+<part name="C9" library="rcl" deviceset="C-US" device="050-050X075" value="4n7"/>
 <part name="R12" library="rcl" deviceset="R-US_" device="0207/10" value="4k7"/>
 <part name="R13" library="rcl" deviceset="R-US_" device="0207/10" value="5k1"/>
 <part name="R14" library="rcl" deviceset="R-US_" device="0207/10" value="2k7"/>

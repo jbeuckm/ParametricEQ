@@ -12888,8 +12888,8 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <part name="GAIN" library="bourns_ptd" deviceset="PTD901" device="" value="5k lin"/>
 <part name="P+4" library="supply1" deviceset="+12V" device=""/>
 <part name="P-4" library="supply1" deviceset="-12V" device=""/>
-<part name="C14" library="rcl" deviceset="CPOL-EU" device="B45181A"/>
-<part name="C15" library="rcl" deviceset="CPOL-EU" device="B45181A"/>
+<part name="C14" library="rcl" deviceset="CPOL-EU" device="B45181A" value="10u"/>
+<part name="C15" library="rcl" deviceset="CPOL-EU" device="B45181A" value="10u"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>

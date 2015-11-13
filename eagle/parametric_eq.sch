@@ -12891,6 +12891,7 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <part name="C14" library="rcl" deviceset="CPOL-EU" device="B45181A" value="10u"/>
 <part name="C15" library="rcl" deviceset="CPOL-EU" device="B45181A" value="10u"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="C16" library="rcl" deviceset="CPOL-EU" device="B45181A" value="10u"/>
 </parts>
 <sheets>
 <sheet>
@@ -12945,8 +12946,8 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <instance part="GND6" gate="1" x="-2.54" y="-7.62"/>
 <instance part="OUT" gate="G$1" x="182.88" y="43.18" rot="R180"/>
 <instance part="GND12" gate="1" x="175.26" y="33.02"/>
-<instance part="INPUT" gate="G$1" x="-5.08" y="71.12" rot="MR180"/>
-<instance part="GND7" gate="1" x="2.54" y="63.5"/>
+<instance part="INPUT" gate="G$1" x="-12.7" y="91.44" rot="MR180"/>
+<instance part="GND7" gate="1" x="-5.08" y="81.28"/>
 <instance part="LOWFREQ" gate="/1" x="58.42" y="30.48" rot="MR180"/>
 <instance part="LOWFREQ" gate="/2" x="71.12" y="30.48" rot="MR180"/>
 <instance part="MIDFREQ" gate="/1" x="101.6" y="30.48" rot="MR180"/>
@@ -12962,6 +12963,7 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <instance part="C14" gate="G$1" x="-7.62" y="48.26"/>
 <instance part="C15" gate="G$1" x="-7.62" y="35.56"/>
 <instance part="GND8" gate="1" x="0" y="38.1"/>
+<instance part="C16" gate="G$1" x="10.16" y="88.9"/>
 </instances>
 <busses>
 </busses>
@@ -13317,7 +13319,7 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <segment>
 <pinref part="INPUT" gate="G$1" pin="RING"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="2.54" y1="66.04" x2="2.54" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="83.82" x2="-5.08" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C15" gate="G$1" pin="+"/>
@@ -13435,9 +13437,19 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="INPUT" gate="G$1" pin="TIP"/>
-<wire x1="2.54" y1="76.2" x2="7.62" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="C16" gate="G$1" pin="+"/>
+<wire x1="-5.08" y1="96.52" x2="10.16" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="96.52" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="C16" gate="G$1" pin="-"/>
+<wire x1="10.16" y1="83.82" x2="5.08" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="83.82" x2="5.08" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="5.08" y1="76.2" x2="7.62" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

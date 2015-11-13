@@ -6365,6 +6365,40 @@ Source: http://www.mouser.com/ds/2/54/ptd90-35260.pdf</description>
 <wire x1="-4.7498" y1="4.699" x2="-4.7498" y2="-5.0038" width="0.127" layer="21"/>
 <wire x1="4.7244" y1="-4.953" x2="4.7244" y2="4.699" width="0.127" layer="21"/>
 </package>
+<package name="PTD901">
+<description>&lt;b&gt;Bourns PTD901&lt;/b&gt; one level&lt;p&gt;
+Source: http://www.mouser.com/ds/2/54/ptd90-35260.pdf</description>
+<wire x1="-2.9" y1="-13.7" x2="2.9" y2="-13.7" width="0.2032" layer="21"/>
+<text x="-3.175" y="3.175" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.175" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-2.9" y1="-11.47" x2="-2.9" y2="-14.97" width="0.2032" layer="21"/>
+<wire x1="2.9" y1="-14.97" x2="2.9" y2="-11.47" width="0.2032" layer="21"/>
+<wire x1="-3.4" y1="-5.07" x2="-3.4" y2="-11.17" width="0.2032" layer="21"/>
+<wire x1="-3.4" y1="-11.17" x2="-2.9" y2="-11.47" width="0.2032" layer="21"/>
+<wire x1="2.9" y1="-11.47" x2="3.4" y2="-11.17" width="0.2032" layer="21"/>
+<wire x1="3.4" y1="-11.17" x2="3.4" y2="-5.07" width="0.2032" layer="21"/>
+<wire x1="-2.9" y1="-11.47" x2="2.9" y2="-11.47" width="0.2032" layer="21"/>
+<wire x1="-2.9" y1="-14.97" x2="2.9" y2="-14.97" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-10.795" x2="3.3" y2="-10.27" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-10.295" x2="3.3" y2="-9.77" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-9.795" x2="3.3" y2="-9.27" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-9.295" x2="3.3" y2="-8.77" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-8.795" x2="3.3" y2="-8.27" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-8.295" x2="3.3" y2="-7.77" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-7.795" x2="3.3" y2="-7.27" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-7.295" x2="3.3" y2="-6.77" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-6.795" x2="3.3" y2="-6.27" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-6.295" x2="3.3" y2="-5.77" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-5.795" x2="3.3" y2="-5.27" width="0.2032" layer="21"/>
+<wire x1="-3.075" y1="-11.295" x2="3.3" y2="-10.77" width="0.2032" layer="21"/>
+<pad name="1" x="-2.4854" y="0" drill="1" diameter="1.778"/>
+<pad name="2" x="0" y="0" drill="1" diameter="1.778"/>
+<pad name="3" x="2.4854" y="0" drill="1" diameter="1.778"/>
+<wire x1="-4.7498" y1="-5.0038" x2="4.7498" y2="-5.0038" width="0.127" layer="21"/>
+<wire x1="-4.7498" y1="1.5494" x2="4.7498" y2="1.5494" width="0.127" layer="21"/>
+<wire x1="-4.7498" y1="1.5494" x2="-4.7498" y2="-5.0038" width="0.127" layer="21"/>
+<wire x1="4.7244" y1="-4.953" x2="4.7244" y2="1.524" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="POT_EU-">
@@ -6407,6 +6441,25 @@ Source: http://www.mouser.com/ds/2/54/ptd90-35260.pdf</description>
 </connects>
 <technologies>
 <technology name="PTD902"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PTD901" prefix="R" uservalue="yes">
+<description>&lt;b&gt;16mm Potentiometer&lt;/b&gt; one level&lt;p&gt;
+Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
+<gates>
+<gate name="G$1" symbol="POT_EU-" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PTD901">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -6473,6 +6526,9 @@ Source: http://www.mouser.com/ds/2/54/ptd90-35260.pdf</description>
 <part name="LOW" library="bourns_ptd" deviceset="PTD902" device="" technology="PTD902" value="50k log"/>
 <part name="MID" library="bourns_ptd" deviceset="PTD902" device="" technology="PTD902" value="50k log"/>
 <part name="HI" library="bourns_ptd" deviceset="PTD902" device="" technology="PTD902" value="50k log"/>
+<part name="LEVEL" library="bourns_ptd" deviceset="PTD901" device="" value="5k lin"/>
+<part name="LEVEL1" library="bourns_ptd" deviceset="PTD901" device="" value="5k lin"/>
+<part name="LEVEL2" library="bourns_ptd" deviceset="PTD901" device="" value="5k lin"/>
 </parts>
 <sheets>
 <sheet>
@@ -6536,6 +6592,9 @@ Source: http://www.mouser.com/ds/2/54/ptd90-35260.pdf</description>
 <instance part="MID" gate="/2" x="116.84" y="30.48" rot="MR180"/>
 <instance part="HI" gate="/1" x="147.32" y="30.48" rot="MR180"/>
 <instance part="HI" gate="/2" x="160.02" y="30.48" rot="MR180"/>
+<instance part="LEVEL" gate="G$1" x="71.12" y="-5.08" rot="MR90"/>
+<instance part="LEVEL1" gate="G$1" x="116.84" y="-5.08" rot="MR90"/>
+<instance part="LEVEL2" gate="G$1" x="160.02" y="-5.08" rot="MR90"/>
 </instances>
 <busses>
 </busses>
@@ -6628,6 +6687,8 @@ Source: http://www.mouser.com/ds/2/54/ptd90-35260.pdf</description>
 <wire x1="83.82" y1="48.26" x2="83.82" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="78.74" y="48.26"/>
 <junction x="83.82" y="-5.08"/>
+<pinref part="LEVEL" gate="G$1" pin="E"/>
+<pinref part="LEVEL1" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -6651,6 +6712,8 @@ Source: http://www.mouser.com/ds/2/54/ptd90-35260.pdf</description>
 <wire x1="129.54" y1="48.26" x2="129.54" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="124.46" y="48.26"/>
 <junction x="129.54" y="-5.08"/>
+<pinref part="LEVEL1" gate="G$1" pin="E"/>
+<pinref part="LEVEL2" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -6671,6 +6734,7 @@ Source: http://www.mouser.com/ds/2/54/ptd90-35260.pdf</description>
 <wire x1="175.26" y1="48.26" x2="170.18" y2="48.26" width="0.1524" layer="91"/>
 <junction x="170.18" y="48.26"/>
 <pinref part="OUT" gate="G$1" pin="TIP"/>
+<pinref part="LEVEL2" gate="G$1" pin="E"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -6698,12 +6762,14 @@ Source: http://www.mouser.com/ds/2/54/ptd90-35260.pdf</description>
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="0" x2="71.12" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="LEVEL" gate="G$1" pin="S"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="0" x2="116.84" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="LEVEL1" gate="G$1" pin="S"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -6752,6 +6818,7 @@ Source: http://www.mouser.com/ds/2/54/ptd90-35260.pdf</description>
 <segment>
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="160.02" y1="2.54" x2="160.02" y2="0" width="0.1524" layer="91"/>
+<pinref part="LEVEL2" gate="G$1" pin="S"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -6977,6 +7044,7 @@ Source: http://www.mouser.com/ds/2/54/ptd90-35260.pdf</description>
 <wire x1="38.1" y1="63.5" x2="48.26" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="63.5" x2="48.26" y2="73.66" width="0.1524" layer="91"/>
 <junction x="48.26" y="73.66"/>
+<pinref part="LEVEL" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$9" class="0">
