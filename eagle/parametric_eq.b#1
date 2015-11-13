@@ -1725,7 +1725,7 @@ design rules under a new name.</description>
 <element name="OUT" library="erthenvar" package="ERTHENVAR-JACK-90DEG" value="AUDIO-JACK" x="76.835" y="55.245"/>
 <element name="INPUT" library="erthenvar" package="ERTHENVAR-JACK-90DEG" value="AUDIO-JACK" x="6.985" y="55.245"/>
 <element name="R1" library="rcl" package="0207/10" value="2k2" x="39.37" y="38.1" rot="R90"/>
-<element name="R10" library="rcl" package="0207/10" value="1k" x="13.97" y="19.05" rot="R270"/>
+<element name="R10" library="rcl" package="0207/10" value="1k" x="17.78" y="16.51" rot="R270"/>
 <element name="R12" library="rcl" package="0207/10" value="4k7" x="35.56" y="12.7"/>
 <element name="R13" library="rcl" package="0207/10" value="5k1" x="44.45" y="19.05" rot="R180"/>
 <element name="R14" library="rcl" package="0207/10" value="2k7" x="59.69" y="19.05"/>
@@ -1755,7 +1755,7 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="2"/>
 <contactref element="R10" pad="1"/>
 <contactref element="R2" pad="2"/>
-<wire x1="27.305" y1="23.495" x2="13.97" y2="24.13" width="0.6604" layer="16"/>
+<wire x1="27.305" y1="23.495" x2="17.78" y2="21.59" width="0.6604" layer="16"/>
 <wire x1="27.305" y1="31.115" x2="27.305" y2="23.495" width="0.6604" layer="16"/>
 <wire x1="25.4" y1="31.75" x2="27.305" y2="31.115" width="0.6604" layer="16"/>
 <wire x1="21.59" y1="31.75" x2="20.32" y2="33.02" width="0.6604" layer="16"/>
@@ -1764,7 +1764,9 @@ design rules under a new name.</description>
 <signal name="N$2">
 <contactref element="R10" pad="2"/>
 <contactref element="GAIN" pad="1"/>
-<wire x1="5.715" y1="5.715" x2="13.97" y2="13.97" width="0.6604" layer="16"/>
+<wire x1="5.715" y1="5.715" x2="5.715" y2="6.985" width="0.6604" layer="16"/>
+<wire x1="5.715" y1="6.985" x2="7.62" y2="8.89" width="0.6604" layer="16"/>
+<wire x1="7.62" y1="8.89" x2="17.78" y2="11.43" width="0.6604" layer="16"/>
 <wire x1="5.715" y1="5.08" x2="5.715" y2="5.715" width="0.6604" layer="16"/>
 <wire x1="5.715" y1="5.08" x2="5.1346" y2="5.08" width="0.6604" layer="16"/>
 </signal>
