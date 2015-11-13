@@ -6412,7 +6412,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="R8" library="pot" deviceset="3RP/1610N" device="" value="5k lin"/>
 <part name="R9" library="pot" deviceset="3RP/1610N" device="" value="5k lin"/>
 <part name="R10" library="rcl" deviceset="R-US_" device="0207/10" value="1k"/>
-<part name="R11" library="pot" deviceset="3RP/1610N" device="" value="5k"/>
+<part name="GAIN" library="pot" deviceset="3RP/1610N" device="" value="5k"/>
 <part name="C4" library="rcl" deviceset="C-US" device="025-030X050" value="39n"/>
 <part name="C5" library="rcl" deviceset="C-US" device="025-030X050" value="100n"/>
 <part name="C6" library="rcl" deviceset="C-US" device="025-030X050" value="5n6"/>
@@ -6448,7 +6448,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="OUT" library="erthenvar" deviceset="AUDIO-JACK" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="OUT1" library="erthenvar" deviceset="AUDIO-JACK" device=""/>
+<part name="INPUT" library="erthenvar" deviceset="AUDIO-JACK" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -6478,7 +6478,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="R8" gate="G$1" x="116.84" y="-5.08" rot="MR90"/>
 <instance part="R9" gate="G$1" x="160.02" y="-5.08" rot="MR90"/>
 <instance part="R10" gate="G$1" x="27.94" y="91.44"/>
-<instance part="R11" gate="G$1" x="40.64" y="91.44" rot="MR270"/>
+<instance part="GAIN" gate="G$1" x="40.64" y="91.44" rot="MR270"/>
 <instance part="C4" gate="G$1" x="48.26" y="15.24" rot="R180"/>
 <instance part="C5" gate="G$1" x="71.12" y="5.08" rot="R180"/>
 <instance part="C6" gate="G$1" x="91.44" y="15.24" rot="R180"/>
@@ -6514,7 +6514,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="GND6" gate="1" x="-2.54" y="-7.62"/>
 <instance part="OUT" gate="G$1" x="182.88" y="43.18" rot="R180"/>
 <instance part="GND12" gate="1" x="175.26" y="33.02"/>
-<instance part="OUT1" gate="G$1" x="-5.08" y="71.12" rot="MR180"/>
+<instance part="INPUT" gate="G$1" x="-5.08" y="71.12" rot="MR180"/>
 <instance part="GND7" gate="1" x="2.54" y="63.5"/>
 </instances>
 <busses>
@@ -6535,7 +6535,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
-<pinref part="R11" gate="G$1" pin="E"/>
+<pinref part="GAIN" gate="G$1" pin="E"/>
 <wire x1="33.02" y1="91.44" x2="35.56" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6859,7 +6859,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="175.26" y1="40.64" x2="175.26" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="OUT1" gate="G$1" pin="RING"/>
+<pinref part="INPUT" gate="G$1" pin="RING"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="2.54" y1="66.04" x2="2.54" y2="68.58" width="0.1524" layer="91"/>
 </segment>
@@ -6954,10 +6954,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="38.1" y1="50.8" x2="40.64" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="50.8" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
 <junction x="38.1" y="50.8"/>
-<pinref part="R11" gate="G$1" pin="A"/>
+<pinref part="GAIN" gate="G$1" pin="A"/>
 <wire x1="48.26" y1="91.44" x2="45.72" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="86.36" x2="48.26" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="S"/>
+<pinref part="GAIN" gate="G$1" pin="S"/>
 <wire x1="40.64" y1="86.36" x2="48.26" y2="86.36" width="0.1524" layer="91"/>
 <junction x="48.26" y="86.36"/>
 <wire x1="48.26" y1="73.66" x2="48.26" y2="86.36" width="0.1524" layer="91"/>
@@ -6971,7 +6971,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <net name="N$9" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="OUT1" gate="G$1" pin="TIP"/>
+<pinref part="INPUT" gate="G$1" pin="TIP"/>
 <wire x1="2.54" y1="76.2" x2="7.62" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
