@@ -75,6 +75,7 @@
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -118,6 +119,9 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="no"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -12823,6 +12827,55 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="adafruit">
+<packages>
+<package name="FB">
+<wire x1="0.5" y1="0" x2="-1.5" y2="0" width="0.254" layer="21"/>
+<circle x="2.5" y="0" radius="2" width="0.127" layer="21"/>
+<circle x="2.5" y="0" radius="1.5" width="0.127" layer="21"/>
+<pad name="P$1" x="-2.5" y="0" drill="0.8" diameter="1.9304"/>
+<pad name="P$2" x="2.5" y="0" drill="0.8" diameter="1.9304"/>
+<text x="-3.81" y="2.54" size="1.27" layer="25" font="vector">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="FB">
+<wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="3.81" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="-5.08" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="90" cap="flat"/>
+<text x="-1.27" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="3.81" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FB">
+<description>&lt;b&gt;Ferrite bead&lt;/b&gt;
+&lt;p&gt;
+Digikey #P9821BK-ND</description>
+<gates>
+<gate name="G$1" symbol="FB" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="FB">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12889,6 +12942,8 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <part name="C15" library="rcl" deviceset="CPOL-EU" device="B45181A" value="10u"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="C16" library="rcl" deviceset="CPOL-EU" device="B45181A" value="10u"/>
+<part name="U$2" library="adafruit" deviceset="FB" device=""/>
+<part name="U$3" library="adafruit" deviceset="FB" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12923,7 +12978,7 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <instance part="R18" gate="G$1" x="134.62" y="50.8"/>
 <instance part="R19" gate="G$1" x="147.32" y="17.78" rot="R90"/>
 <instance part="R20" gate="G$1" x="160.02" y="17.78" rot="R90"/>
-<instance part="U$1" gate="G$1" x="-12.7" y="48.26"/>
+<instance part="U$1" gate="G$1" x="-20.32" y="48.26"/>
 <instance part="P+2" gate="1" x="12.7" y="25.4"/>
 <instance part="P+3" gate="1" x="20.32" y="25.4"/>
 <instance part="P-1" gate="1" x="12.7" y="-5.08"/>
@@ -12958,6 +13013,8 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <instance part="C15" gate="G$1" x="12.7" y="43.18"/>
 <instance part="GND8" gate="1" x="20.32" y="45.72"/>
 <instance part="C16" gate="G$1" x="10.16" y="88.9"/>
+<instance part="U$2" gate="G$1" x="-2.54" y="53.34" rot="R90"/>
+<instance part="U$3" gate="G$1" x="-2.54" y="48.26" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -13207,6 +13264,11 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <pinref part="P+4" gate="1" pin="+12V"/>
 <pinref part="C14" gate="G$1" pin="+"/>
 <wire x1="12.7" y1="58.42" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="2"/>
+<wire x1="5.08" y1="53.34" x2="7.62" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="53.34" x2="7.62" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="58.42" x2="12.7" y2="58.42" width="0.1524" layer="91"/>
+<junction x="12.7" y="58.42"/>
 </segment>
 </net>
 <net name="-12V" class="0">
@@ -13232,6 +13294,11 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <pinref part="P-4" gate="1" pin="-12V"/>
 <pinref part="C15" gate="G$1" pin="-"/>
 <wire x1="12.7" y1="38.1" x2="12.7" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="2"/>
+<wire x1="5.08" y1="48.26" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="48.26" x2="7.62" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="38.1" x2="12.7" y2="38.1" width="0.1524" layer="91"/>
+<junction x="12.7" y="38.1"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -13426,6 +13493,18 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <wire x1="5.08" y1="83.82" x2="5.08" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="5.08" y1="76.2" x2="7.62" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="+12V"/>
+<pinref part="U$2" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="-12V"/>
+<pinref part="U$3" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
