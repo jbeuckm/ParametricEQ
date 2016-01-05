@@ -4,7 +4,7 @@
 (This file generated from the board:)
 (.../ParametricEQ/eagle/parametric_eq.brd)
 (Current profile is .../pcbgcode.repo/profiles/mach.pp  )
-(This file generated 11/20/15 7:08 PM)
+(This file generated 12/15/15 5:48 PM)
 (Settings from pcb-machine.h)
 (spindle on time = 0.0000)
 (spindle speed = 20000.0000)

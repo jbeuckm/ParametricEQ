@@ -148,6 +148,7 @@
 <wire x1="6.35" y1="0" x2="2.54" y2="3.81" width="1.778" layer="46"/>
 <wire x1="2.54" y1="3.81" x2="2.54" y2="57.15" width="1.778" layer="46"/>
 <wire x1="2.54" y1="57.15" x2="3.81" y2="58.42" width="1.778" layer="46"/>
+<rectangle x1="50.8" y1="53.34" x2="55.88" y2="55.88" layer="16"/>
 </plain>
 <libraries>
 <library name="rcl">

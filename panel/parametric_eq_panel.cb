@@ -1092,7 +1092,7 @@
           <HoldingTabs state="Value">
             <TabMethod>Automatic</TabMethod>
             <Width>1</Width>
-            <Height>1</Height>
+            <Height>2</Height>
             <MinimumTabs>4</MinimumTabs>
             <MaximumTabs>4</MaximumTabs>
             <TabDistance>1.6</TabDistance>
